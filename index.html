@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <title>A-Frame Sound Test</title>
+</head>
+
+<body>
+    <a-scene>
+        <!-- Background Sky -->
+        <a-sky src="./asset/frame.jpg"></a-sky>
+
+        <!-- Sound -->
+        <a-sound id="mySound" src="./asset/sound.mp3" loop="true" autoplay="true" position="0 0 -5"
+            volume="1.0"></a-sound>
+
+        <!-- Text -->
+        <a-text value="Welcome to Age of Dinosaur" color="#FFFFFF" position="-4 3 -5" scale="2 2 2"></a-text>
+
+        <!-- 3D Model -->
+        <a-entity gltf-model="./asset/model2/scene.gltf" scale="1 1 1" position="-5 0 -5"
+            animation__moveForward="property: position; from: -5 1 -4; to: 5 1 -4; dur: 5000; easing: linear; loop: true;"></a-entity>
+   
+    </a-scene>
+</body>
+
+</html>
